@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的简历</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Arial', sans-serif; }
+    .download-btn:hover { background-color: #1d4ed8; }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-6">
+    <!-- 头部：个人信息 -->
+    <header class="text-center border-b pb-4 mb-4">
+      <h1 class="text-4xl font-bold text-gray-800">你的名字</h1>
+      <p class="text-lg text-gray-600">前端开发工程师</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="mailto:你的邮箱@example.com" class="text-blue-600">邮箱: 你的邮箱@example.com</a>
+        <a href="https://github.com/你的用户名" class="text-blue-600">GitHub</a>
+        <a href="https://linkedin.com/in/你的用户名" class="text-blue-600">LinkedIn</a>
+      </div>
+      <a href="path/to/your-resume.pdf" download class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded download-btn">下载 PDF 版简历</a>
+    </header>
+
+    <!-- 教育背景 -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2">教育背景</h2>
+      <div class="mt-4">
+        <h3 class="text-xl font-medium">清华大学 - 计算机科学与技术学士</h3>
+        <p class="text-gray-600">2018年9月 - 2022年6月 | 北京</p>
+        <p class="text-gray-700">主修课程：数据结构、算法设计、Web开发</p>
+      </div>
+    </section>
+
+    <!-- 技能 -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2">技能</h2>
+      <ul class="mt-4 grid grid-cols-2 gap-2 text-gray-700">
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Tailwind CSS</li>
+        <li>Git, GitHub</li>
+        <li>响应式设计</li>
+      </ul>
+    </section>
+
+    <!-- 工作经历 -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2">工作经历</h2>
+      <div class="mt-4">
+        <h3 class="text-xl font-medium">前端开发实习生 | 某科技公司</h3>
+        <p class="text-gray-600">2022年7月 - 2022年12月 | 北京</p>
+        <ul class="list-disc ml-6 text-gray-700">
+          <li>开发并维护公司官网，使用 React 和 Tailwind CSS。</li>
+          <li>优化网页加载速度，提升用户体验。</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
